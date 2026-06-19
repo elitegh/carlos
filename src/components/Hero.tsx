@@ -147,32 +147,6 @@ export default function Hero() {
             >
               View Experience
             </Button>
-            {personalInfo.github && (
-              <Button
-                variant="outlined"
-                size="large"
-                startIcon={<GitHubIcon />}
-                href={personalInfo.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                component="a"
-              >
-                GitHub
-              </Button>
-            )}
-            {personalInfo.linkedin && (
-              <Button
-                variant="outlined"
-                size="large"
-                startIcon={<LinkedInIcon />}
-                href={personalInfo.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                component="a"
-              >
-                LinkedIn
-              </Button>
-            )}
             <Button
               variant="outlined"
               size="large"

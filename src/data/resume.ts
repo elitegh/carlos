@@ -7,7 +7,7 @@ export const personalInfo = {
   phone: "(972) 646-0656",
   location: "Houston, TX",
   github: "https://github.com/adrewfrenenski",
-  linkedin: "#",
+  linkedin: "https://linkedin.com",
 };
 
 export const summary =
