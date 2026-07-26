@@ -45,8 +45,8 @@ export default function Contact() {
             color="text.secondary"
             sx={{ mb: 4, maxWidth: 520, mx: "auto" }}
           >
-            I&apos;m open to discussing senior engineering roles, architecture
-            consulting, and frontend leadership opportunities.
+            I&apos;m open to discussing senior full-stack roles, AI/ML
+            integration, and data engineering opportunities.
           </Typography>
 
           <Stack

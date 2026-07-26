@@ -13,21 +13,21 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Carlos Mbasogo | Senior Software Engineer",
   description:
-    "Senior Software Engineer specializing in React, Next.js, TypeScript, UI architecture, design systems, and API integration. 10+ years building scalable frontend applications.",
+    "Senior Full-Stack Engineer specializing in AI/ML, full-stack development, and data engineering. 10+ years building scalable enterprise applications and analytics platforms.",
   keywords: [
     "Carlos Mbasogo",
     "Senior Software Engineer",
+    "Full Stack",
+    "AI/ML",
+    "Data Engineering",
     "React",
-    "Next.js",
-    "TypeScript",
-    "Frontend Architect",
+    "Python",
     "Houston",
   ],
   authors: [{ name: "Carlos Mbasogo" }],
   openGraph: {
     title: "Carlos Mbasogo | Senior Software Engineer",
-    description:
-      "React & Angular Architect | UI Systems & API Integration",
+    description: "AI/ML · Full Stack · Data Engineering",
     type: "website",
   },
 };
