@@ -60,19 +60,39 @@ export default function Header() {
       >
         <Container maxWidth="lg">
           <Toolbar disableGutters sx={{ minHeight: 64 }}>
-            <Typography
-              variant="h6"
-              component="div"
+            <Box
+              onClick={() => handleNavClick("#hero")}
               sx={{
                 flexGrow: 1,
-                fontWeight: 700,
+                display: "flex",
+                alignItems: "center",
+                gap: 1.25,
                 cursor: "pointer",
-                color: "text.primary",
               }}
-              onClick={() => handleNavClick("#hero")}
             >
-              CM
-            </Typography>
+              <Box
+                component="img"
+                src="/logo.png"
+                alt="Carlos Mbasogo"
+                sx={{
+                  width: 36,
+                  height: 36,
+                  borderRadius: 1.5,
+                  display: "block",
+                }}
+              />
+              <Typography
+                variant="h6"
+                component="div"
+                sx={{
+                  fontWeight: 700,
+                  color: "text.primary",
+                  display: { xs: "none", sm: "block" },
+                }}
+              >
+                Carlos Mbasogo
+              </Typography>
+            </Box>
 
             <Box sx={{ display: { xs: "none", md: "flex" }, gap: 0.5, mr: 1 }}>
               {navItems.map((item) => (

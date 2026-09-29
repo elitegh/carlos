@@ -61,12 +61,37 @@ export default function Experience() {
                   <Typography variant="h5" component="h3">
                     {job.role}
                   </Typography>
-                  <Typography variant="subtitle1" color="primary" sx={{ fontWeight: 600 }}>
-                    {job.company}
-                  </Typography>
+                  {job.url ? (
+                    <Typography
+                      component="a"
+                      href={job.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      variant="subtitle1"
+                      color="primary"
+                      sx={{
+                        fontWeight: 600,
+                        textDecoration: "none",
+                        "&:hover": { textDecoration: "underline" },
+                      }}
+                    >
+                      {job.company}
+                    </Typography>
+                  ) : (
+                    <Typography variant="subtitle1" color="primary" sx={{ fontWeight: 600 }}>
+                      {job.company}
+                    </Typography>
+                  )}
                   <Typography variant="body2" color="text.secondary">
                     {job.location}
+                    {job.locationalType ? ` · ${job.locationalType}` : ""}
+                    {job.employmentType ? ` · ${job.employmentType}` : ""}
                   </Typography>
+                  {job.industryFocus && (
+                    <Typography variant="body2" color="text.secondary" sx={{ mt: 0.5 }}>
+                      {job.industryFocus}
+                    </Typography>
+                  )}
                 </Box>
                 <Typography
                   variant="body2"

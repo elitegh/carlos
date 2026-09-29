@@ -53,11 +53,29 @@ export default function Education() {
             </Box>
             <Box>
               <Typography variant="h6">{education.degree}</Typography>
-              <Typography variant="body1" color="primary" sx={{ fontWeight: 500 }}>
-                {education.school}
-              </Typography>
+              {education.url ? (
+                <Typography
+                  component="a"
+                  href={education.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  variant="body1"
+                  color="primary"
+                  sx={{
+                    fontWeight: 500,
+                    textDecoration: "none",
+                    "&:hover": { textDecoration: "underline" },
+                  }}
+                >
+                  {education.school}
+                </Typography>
+              ) : (
+                <Typography variant="body1" color="primary" sx={{ fontWeight: 500 }}>
+                  {education.school}
+                </Typography>
+              )}
               <Typography variant="body2" color="text.secondary" sx={{ mt: 0.5 }}>
-                {education.period}
+                {education.location} · {education.period}
               </Typography>
             </Box>
           </Stack>
